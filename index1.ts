@@ -36,12 +36,17 @@ class Vehicle {
         this.status = "stopped";
     }
 }
+
+// Part 3: Car Class
+// Car extends Vehicle, so it gets make, model, wheels, status, start(), and stop().
 class Car extends Vehicle {
     constructor(make: string, model: string) {
         super(make, model, "4");
     }
 }
 
+// Part 4: MotorCycle Class
+// MotorCycle extends vehicle, so it gets make, model, wheels, status, start(), and stop().
 class MotorCycle extends Vehicle {
     constructor(make: string, model: string) {
         super(make, model, 2);
@@ -58,15 +63,32 @@ function printStatus(vehicle: Vehicle): void {
     }
 }
 
+// Part 5: Testing Vehicle, Car, and MotorCycle
+
+// Create a new MotorCycle object.
 const myHarley = new MotorCycle("Harley-Davidson", "Low Rider S");
+
+// Motorcycle starts.
 myHarley.start();
+
+// Displays the motorcycle status and the make of the motorcycle.
 printStatus(myHarley);
 console.log(myHarley.make.toUpperCase());
 
+// Create a new Car object.
 const myBuick = new Car("Buick", "Regal");
+
+// Car starts.
+myBuick.start();
+
+// Displays the car status and the make of the motorcycle.
+printStatus(myBuick);
+console.log(myBuick.make.toUpperCase());
+
+// Convert wheels to a number, subtract 1, and save the new value.
 myBuick.wheels = Number(myBuick.wheels) - 1;
-console.log(myBuick.wheels);
-console.log(myBuick.model);
+console.log("Car Number of wheels is:", myBuick.wheels);
+console.log("Car Model:", myBuick.model);
 
 class NCycle<T> {
     status = "stopped";
