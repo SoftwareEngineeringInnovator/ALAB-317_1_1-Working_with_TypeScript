@@ -1,0 +1,31 @@
+{
+  "name": "alab-317_1_1-working_with_typescript",
+  "version": "1.0.0",
+  "description": "TypeScript lab using classes, union types, generics, methods, and basic console testing.",
+  "main": "index1.js",
+  "scripts": {
+    "build": "tsc index1.ts",
+    "start": "node index1.js",
+    "dev": "tsc index1.ts && node index1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftwareEngineeringInnovator/ALAB-317_1_1-Working_with_TypeScript.git"
+  },
+  "keywords": [
+    "typescript",
+    "classes",
+    "generics",
+    "lab"
+  ],
+  "author": "Fredy Chilito",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SoftwareEngineeringInnovator/ALAB-317_1_1-Working_with_TypeScript/issues"
+  },
+  "homepage": "https://github.com/SoftwareEngineeringInnovator/ALAB-317_1_1-Working_with_TypeScript#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
