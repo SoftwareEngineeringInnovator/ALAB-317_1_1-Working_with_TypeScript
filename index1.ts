@@ -135,7 +135,7 @@ class NCycle<T> {
 
         // First we check that make and model are both arrays.
         if (Array.isArray(this.make) && Array.isArray(this.model)) {
-            
+
             // Get the smaller length so we only print matching pairs.
             const smallerLength = Math.min(this.make.length, this.model.length);
 
@@ -193,3 +193,11 @@ const models5 = [1, 1, 2, 3, 5];
 const testCycle5 = new NCycle<number>(makes5, models5, 0);
 testCycle5.print(7);
 testCycle5.printAll();
+
+function add(x: number, y: number): number {
+    return x + y;
+}
+// add(testCycle1.make, testCycle5.model[1]);
+
+// Error expected here
+// add(testCycle2.make, testCycle4.model[1]);
